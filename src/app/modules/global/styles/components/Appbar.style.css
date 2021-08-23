@@ -1,0 +1,22 @@
+/* Parent */
+.appbar {
+	@apply p-2 flex flex-row items-center;
+	@apply bg-gray-100;
+	@apply dark:bg-primary-800;
+}
+
+.appbar-menu {
+	@apply text-2xl p-0.5;
+}
+
+.appbar-middle {
+	@apply flex-grow;
+}
+
+.appbar-opts {
+	@apply flex flex-row items-center;
+}
+
+.appbar-opts button {
+	@apply mx-1;
+}

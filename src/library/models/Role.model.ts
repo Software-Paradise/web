@@ -1,0 +1,10 @@
+export enum Role {
+	PRIMARY,
+	SECONDARY,
+	ACCENT,
+	INFO,
+	SUCCESS,
+	WARNING,
+	DANGER,
+	NONE,
+}

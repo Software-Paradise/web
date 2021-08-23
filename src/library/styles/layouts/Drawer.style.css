@@ -1,0 +1,26 @@
+/* Parent */
+.drawer-layout {
+	@apply flex-grow flex overflow-hidden;
+}
+.drawer-layout--top {
+	@apply flex-col;
+}
+.drawer-layout--right {
+	@apply flex-row-reverse;
+}
+.drawer-layout--bottom {
+	@apply flex-col-reverse;
+}
+.drawer-layout--left {
+	@apply flex-row;
+}
+
+/* Drawer content */
+.drawer-layout__side {
+	@apply overflow-hidden;
+}
+
+/* Content */
+.drawer-layout__content {
+	@apply flex-grow flex flex-col overflow-hidden;
+}

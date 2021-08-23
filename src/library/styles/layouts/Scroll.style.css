@@ -1,0 +1,18 @@
+/* Parent */
+.scroll-layout {
+	@apply flex-grow flex flex-col overflow-hidden;
+}
+
+/* Current content to be scrollable */
+.scroll-layout__content {
+	@apply flex-grow flex;
+}
+.scroll-layout__content--x {
+	@apply flex-row overflow-x-auto;
+}
+.scroll-layout__content--y {
+	@apply flex-col overflow-y-auto;
+}
+.scroll-layout__content--xy {
+	@apply flex-col overflow-auto;
+}

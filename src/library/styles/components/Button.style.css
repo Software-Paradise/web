@@ -1,0 +1,419 @@
+/* Parent */
+.button {
+	@apply p-1 cursor-pointer font-medium rounded-full;
+	@apply border-2 border-transparent bg-transparent;
+}
+.button:active {
+	transform: scale(0.99);
+}
+.button:disabled {
+	@apply opacity-60 pointer-events-none select-none;
+}
+
+/* ____________________ Role Primary ____________________ */
+/* Variant fill */
+.button.button--primary.button--fill {
+	@apply bg-primary-700 text-gray-50;
+	@apply dark:bg-primary-600 dark:text-gray-100;
+}
+.button:hover.button--primary.button--fill {
+	@apply bg-primary-800 text-gray-100;
+	@apply dark:bg-primary-500 dark:text-gray-50;
+}
+.button:active.button--primary.button--fill {
+	@apply bg-primary-900 text-gray-200;
+	@apply dark:bg-primary-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--primary.button--outline {
+	@apply text-primary-700 border-primary-700;
+	@apply dark:text-primary-400 dark:border-primary-600;
+}
+.button:hover.button--primary.button--outline {
+	@apply text-primary-800 border-primary-800;
+	@apply bg-primary-800 bg-opacity-5;
+	@apply dark:text-primary-200 dark:border-primary-400;
+	@apply dark:bg-primary-400 dark:bg-opacity-20;
+}
+.button:active.button--primary.button--outline {
+	@apply text-primary-900 border-primary-900;
+	@apply bg-primary-900 bg-opacity-10;
+	@apply dark:text-primary-400 dark:border-primary-600;
+	@apply dark:bg-primary-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--primary.button--text {
+	@apply text-primary-700;
+	@apply dark:text-primary-400;
+}
+.button:hover.button--primary.button--text {
+	@apply text-primary-800;
+	@apply bg-primary-800 bg-opacity-5;
+	@apply dark:text-primary-200;
+	@apply dark:bg-primary-400 dark:bg-opacity-20;
+}
+.button:active.button--primary.button--text {
+	@apply text-primary-900;
+	@apply bg-primary-900 bg-opacity-10;
+	@apply dark:text-primary-400;
+	@apply dark:bg-primary-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Secondary ____________________ */
+/* Variant fill */
+.button.button--secondary.button--fill {
+	@apply bg-secondary-700 text-gray-50;
+	@apply dark:bg-secondary-600 dark:text-gray-100;
+}
+.button:hover.button--secondary.button--fill {
+	@apply bg-secondary-800 text-gray-100;
+	@apply dark:bg-secondary-500 dark:text-gray-50;
+}
+.button:active.button--secondary.button--fill {
+	@apply bg-secondary-900 text-gray-200;
+	@apply dark:bg-secondary-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--secondary.button--outline {
+	@apply text-secondary-700 border-secondary-700;
+	@apply dark:text-secondary-400 dark:border-secondary-600;
+}
+.button:hover.button--secondary.button--outline {
+	@apply text-secondary-800 border-secondary-800;
+	@apply bg-secondary-800 bg-opacity-5;
+	@apply dark:text-secondary-200 dark:border-secondary-400;
+	@apply dark:bg-secondary-400 dark:bg-opacity-20;
+}
+.button:active.button--secondary.button--outline {
+	@apply text-secondary-900 border-secondary-900;
+	@apply bg-secondary-900 bg-opacity-10;
+	@apply dark:text-secondary-400 dark:border-secondary-600;
+	@apply dark:bg-secondary-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--secondary.button--text {
+	@apply text-secondary-700;
+	@apply dark:text-secondary-400;
+}
+.button:hover.button--secondary.button--text {
+	@apply text-secondary-800;
+	@apply bg-secondary-800 bg-opacity-5;
+	@apply dark:text-secondary-200;
+	@apply dark:bg-secondary-400 dark:bg-opacity-20;
+}
+.button:active.button--secondary.button--text {
+	@apply text-secondary-900;
+	@apply bg-secondary-900 bg-opacity-10;
+	@apply dark:text-secondary-400;
+	@apply dark:bg-secondary-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Accent ____________________ */
+/* Variant fill */
+.button.button--accent.button--fill {
+	@apply bg-accent-700 text-gray-50;
+	@apply dark:bg-accent-600 dark:text-gray-100;
+}
+.button:hover.button--accent.button--fill {
+	@apply bg-accent-800 text-gray-100;
+	@apply dark:bg-accent-500 dark:text-gray-50;
+}
+.button:active.button--accent.button--fill {
+	@apply bg-accent-900 text-gray-200;
+	@apply dark:bg-accent-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--accent.button--outline {
+	@apply text-accent-700 border-accent-700;
+	@apply dark:text-accent-400 dark:border-accent-600;
+}
+.button:hover.button--accent.button--outline {
+	@apply text-accent-800 border-accent-800;
+	@apply bg-accent-800 bg-opacity-5;
+	@apply dark:text-accent-200 dark:border-accent-400;
+	@apply dark:bg-accent-400 dark:bg-opacity-20;
+}
+.button:active.button--accent.button--outline {
+	@apply text-accent-900 border-accent-900;
+	@apply bg-accent-900 bg-opacity-10;
+	@apply dark:text-accent-400 dark:border-accent-600;
+	@apply dark:bg-accent-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--accent.button--text {
+	@apply text-accent-700;
+	@apply dark:text-accent-400;
+}
+.button:hover.button--accent.button--text {
+	@apply text-accent-800;
+	@apply bg-accent-800 bg-opacity-5;
+	@apply dark:text-accent-200;
+	@apply dark:bg-accent-400 dark:bg-opacity-20;
+}
+.button:active.button--accent.button--text {
+	@apply text-accent-900;
+	@apply bg-accent-900 bg-opacity-10;
+	@apply dark:text-accent-400;
+	@apply dark:bg-accent-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Info ____________________ */
+/* Variant fill */
+.button.button--info.button--fill {
+	@apply bg-info-700 text-gray-50;
+	@apply dark:bg-info-600 dark:text-gray-100;
+}
+.button:hover.button--info.button--fill {
+	@apply bg-info-800 text-gray-100;
+	@apply dark:bg-info-500 dark:text-gray-50;
+}
+.button:active.button--info.button--fill {
+	@apply bg-info-900 text-gray-200;
+	@apply dark:bg-info-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--info.button--outline {
+	@apply text-info-700 border-info-700;
+	@apply dark:text-info-400 dark:border-info-600;
+}
+.button:hover.button--info.button--outline {
+	@apply text-info-800 border-info-800;
+	@apply bg-info-800 bg-opacity-5;
+	@apply dark:text-info-200 dark:border-info-400;
+	@apply dark:bg-info-400 dark:bg-opacity-20;
+}
+.button:active.button--info.button--outline {
+	@apply text-info-900 border-info-900;
+	@apply bg-info-900 bg-opacity-10;
+	@apply dark:text-info-400 dark:border-info-600;
+	@apply dark:bg-info-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--info.button--text {
+	@apply text-info-700;
+	@apply dark:text-info-400;
+}
+.button:hover.button--info.button--text {
+	@apply text-info-800;
+	@apply bg-info-800 bg-opacity-5;
+	@apply dark:text-info-200;
+	@apply dark:bg-info-400 dark:bg-opacity-20;
+}
+.button:active.button--info.button--text {
+	@apply text-info-900;
+	@apply bg-info-900 bg-opacity-10;
+	@apply dark:text-info-400;
+	@apply dark:bg-info-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Success ____________________ */
+/* Variant fill */
+.button.button--success.button--fill {
+	@apply bg-success-700 text-gray-50;
+	@apply dark:bg-success-600 dark:text-gray-100;
+}
+.button:hover.button--success.button--fill {
+	@apply bg-success-800 text-gray-100;
+	@apply dark:bg-success-500 dark:text-gray-50;
+}
+.button:active.button--success.button--fill {
+	@apply bg-success-900 text-gray-200;
+	@apply dark:bg-success-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--success.button--outline {
+	@apply text-success-700 border-success-700;
+	@apply dark:text-success-400 dark:border-success-600;
+}
+.button:hover.button--success.button--outline {
+	@apply text-success-800 border-success-800;
+	@apply bg-success-800 bg-opacity-5;
+	@apply dark:text-success-200 dark:border-success-400;
+	@apply dark:bg-success-400 dark:bg-opacity-20;
+}
+.button:active.button--success.button--outline {
+	@apply text-success-900 border-success-900;
+	@apply bg-success-900 bg-opacity-10;
+	@apply dark:text-success-400 dark:border-success-600;
+	@apply dark:bg-success-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--success.button--text {
+	@apply text-success-700;
+	@apply dark:text-success-400;
+}
+.button:hover.button--success.button--text {
+	@apply text-success-800;
+	@apply bg-success-800 bg-opacity-5;
+	@apply dark:text-success-200;
+	@apply dark:bg-success-400 dark:bg-opacity-20;
+}
+.button:active.button--success.button--text {
+	@apply text-success-900;
+	@apply bg-success-900 bg-opacity-10;
+	@apply dark:text-success-400;
+	@apply dark:bg-success-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Warning ____________________ */
+/* Variant fill */
+.button.button--warning.button--fill {
+	@apply bg-warning-700 text-gray-50;
+	@apply dark:bg-warning-600 dark:text-gray-100;
+}
+.button:hover.button--warning.button--fill {
+	@apply bg-warning-800 text-gray-100;
+	@apply dark:bg-warning-500 dark:text-gray-50;
+}
+.button:active.button--warning.button--fill {
+	@apply bg-warning-900 text-gray-200;
+	@apply dark:bg-warning-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--warning.button--outline {
+	@apply text-warning-700 border-warning-700;
+	@apply dark:text-warning-400 dark:border-warning-600;
+}
+.button:hover.button--warning.button--outline {
+	@apply text-warning-800 border-warning-800;
+	@apply bg-warning-800 bg-opacity-5;
+	@apply dark:text-warning-200 dark:border-warning-400;
+	@apply dark:bg-warning-400 dark:bg-opacity-20;
+}
+.button:active.button--warning.button--outline {
+	@apply text-warning-900 border-warning-900;
+	@apply bg-warning-900 bg-opacity-10;
+	@apply dark:text-warning-400 dark:border-warning-600;
+	@apply dark:bg-warning-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--warning.button--text {
+	@apply text-warning-700;
+	@apply dark:text-warning-400;
+}
+.button:hover.button--warning.button--text {
+	@apply text-warning-800;
+	@apply bg-warning-800 bg-opacity-5;
+	@apply dark:text-warning-200;
+	@apply dark:bg-warning-400 dark:bg-opacity-20;
+}
+.button:active.button--warning.button--text {
+	@apply text-warning-900;
+	@apply bg-warning-900 bg-opacity-10;
+	@apply dark:text-warning-400;
+	@apply dark:bg-warning-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role Danger ____________________ */
+/* Variant fill */
+.button.button--danger.button--fill {
+	@apply bg-danger-700 text-gray-50;
+	@apply dark:bg-danger-600 dark:text-gray-100;
+}
+.button:hover.button--danger.button--fill {
+	@apply bg-danger-800 text-gray-100;
+	@apply dark:bg-danger-500 dark:text-gray-50;
+}
+.button:active.button--danger.button--fill {
+	@apply bg-danger-900 text-gray-200;
+	@apply dark:bg-danger-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--danger.button--outline {
+	@apply text-danger-700 border-danger-700;
+	@apply dark:text-danger-400 dark:border-danger-600;
+}
+.button:hover.button--danger.button--outline {
+	@apply text-danger-800 border-danger-800;
+	@apply bg-danger-800 bg-opacity-5;
+	@apply dark:text-danger-200 dark:border-danger-400;
+	@apply dark:bg-danger-400 dark:bg-opacity-20;
+}
+.button:active.button--danger.button--outline {
+	@apply text-danger-900 border-danger-900;
+	@apply bg-danger-900 bg-opacity-10;
+	@apply dark:text-danger-400 dark:border-danger-600;
+	@apply dark:bg-danger-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--danger.button--text {
+	@apply text-danger-700;
+	@apply dark:text-danger-400;
+}
+.button:hover.button--danger.button--text {
+	@apply text-danger-800;
+	@apply bg-danger-800 bg-opacity-5;
+	@apply dark:text-danger-200;
+	@apply dark:bg-danger-400 dark:bg-opacity-20;
+}
+.button:active.button--danger.button--text {
+	@apply text-danger-900;
+	@apply bg-danger-900 bg-opacity-10;
+	@apply dark:text-danger-400;
+	@apply dark:bg-danger-600 dark:bg-opacity-10;
+}
+
+/* ____________________ Role None ____________________ */
+/* Variant fill */
+.button.button--gray.button--fill {
+	@apply bg-gray-700 text-gray-50;
+	@apply dark:bg-gray-600 dark:text-gray-100;
+}
+.button:hover.button--gray.button--fill {
+	@apply bg-gray-800 text-gray-100;
+	@apply dark:bg-gray-500 dark:text-gray-50;
+}
+.button:active.button--gray.button--fill {
+	@apply bg-gray-900 text-gray-200;
+	@apply dark:bg-gray-600 dark:text-gray-100;
+}
+
+/* Variant outline */
+.button.button--gray.button--outline {
+	@apply text-gray-700 border-gray-700;
+	@apply dark:text-gray-400 dark:border-gray-600;
+}
+.button:hover.button--gray.button--outline {
+	@apply text-gray-800 border-gray-800;
+	@apply bg-gray-800 bg-opacity-5;
+	@apply dark:text-gray-200 dark:border-gray-400;
+	@apply dark:bg-gray-400 dark:bg-opacity-20;
+}
+.button:active.button--gray.button--outline {
+	@apply text-gray-900 border-gray-900;
+	@apply bg-gray-900 bg-opacity-10;
+	@apply dark:text-gray-400 dark:border-gray-600;
+	@apply dark:bg-gray-600 dark:bg-opacity-10;
+}
+
+/* Variant text */
+.button.button--gray.button--text {
+	@apply text-gray-700;
+	@apply dark:text-gray-400;
+}
+.button:hover.button--gray.button--text {
+	@apply text-gray-800;
+	@apply bg-gray-800 bg-opacity-5;
+	@apply dark:text-gray-200;
+	@apply dark:bg-gray-400 dark:bg-opacity-20;
+}
+.button:active.button--gray.button--text {
+	@apply text-gray-900;
+	@apply bg-gray-900 bg-opacity-10;
+	@apply dark:text-gray-400;
+	@apply dark:bg-gray-600 dark:bg-opacity-10;
+}

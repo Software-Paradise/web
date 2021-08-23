@@ -1,0 +1,29 @@
+/* Parent */
+.modal-layout {
+	@apply fixed inset-0 overflow-hidden flex;
+}
+.modal-layout--top {
+	@apply flex-col;
+}
+.modal-layout--right {
+	@apply flex-row-reverse;
+}
+.modal-layout--bottom {
+	@apply flex-col-reverse;
+}
+.modal-layout--left {
+	@apply flex-row;
+}
+.modal-layout--center {
+	@apply flex-col items-center justify-center;
+}
+
+/* Opacity background */
+.modal-layout__overlay {
+	@apply absolute inset-0 bg-black bg-opacity-80;
+}
+
+/* To print as modal content */
+.modal-layout__content {
+	@apply z-10 flex;
+}

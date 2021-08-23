@@ -1,0 +1,10 @@
+/* Import components */
+@import './components/FallBack.style.css';
+@import './components/Sidebar.style.css';
+@import './components/Appbar.style.css';
+
+/* Import layouts */
+@import './layouts/App.style.css';
+
+/* Import views */
+@import './views/Home.style.css';

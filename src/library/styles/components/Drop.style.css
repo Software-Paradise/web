@@ -1,0 +1,71 @@
+/* Parent */
+.drop {
+	@apply bg-green-500 relative flex flex-row;
+}
+
+/* Nested jsx */
+.drop-children {
+	@apply flex-grow;
+}
+
+/* Drop content */
+.drop-content {
+	@apply absolute transform flex flex-col min-w-max;
+	z-index: 99;
+}
+/* Mange the drop content hover */
+.drop-children + .drop-content--hoverable {
+	@apply hidden;
+}
+.drop-children + .drop-content--hoverable:hover,
+.drop-children:hover + .drop-content--hoverable {
+	@apply flex;
+}
+.drop-children + .drop-content--prevent:hover {
+	@apply hidden select-none;
+}
+
+/* Drop content direction */
+.drop-content.drop-content--up {
+	@apply top-0 -translate-y-full;
+}
+.drop-content.drop-content--down {
+	@apply bottom-0 translate-y-full;
+}
+.drop-content.drop-content--left {
+	@apply left-0 -translate-x-full;
+}
+.drop-content.drop-content--right {
+	@apply right-0 translate-x-full;
+}
+.drop-content.drop-content--none {
+	@apply left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2;
+}
+
+/* Drop content alignment vertical */
+.drop-content--up.drop-content--start,
+.drop-content--down.drop-content--start {
+	@apply left-0;
+}
+.drop-content--up.drop-content--center,
+.drop-content--down.drop-content--center {
+	@apply left-1/2 -translate-x-1/2;
+}
+.drop-content--up.drop-content--end,
+.drop-content--down.drop-content--end {
+	@apply right-0;
+}
+
+/* Drop content alignment horizontal */
+.drop-content--left.drop-content--start,
+.drop-content--right.drop-content--start {
+	@apply top-0;
+}
+.drop-content--left.drop-content--center,
+.drop-content--right.drop-content--center {
+	@apply top-1/2 -translate-y-1/2;
+}
+.drop-content--left.drop-content--end,
+.drop-content--right.drop-content--end {
+	@apply bottom-0;
+}

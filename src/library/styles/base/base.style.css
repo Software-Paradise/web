@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+	-webkit-tap-highlight-color: transparent;
+}
+*:focus {
+	@apply outline-none;
+}
+
+body {
+	@apply min-h-screen flex flex-col;
+}
+
+#root {
+	@apply flex-grow flex flex-col max-h-screen overflow-hidden;
+}
+
+#modal {
+	z-index: 101;
+}
+
+#loader {
+	z-index: 102;
+}
+
+#notification {
+	z-index: 103;
+}
+
+i {
+	@apply flex flex-col justify-center items-center;
+}
+/* input[type='password']::-ms-reveal,
+input[type='password']::-ms-clear {
+	display: none;
+} */
+
+/* Custom scrollbar for Application */
+*::-webkit-scrollbar {
+	@apply rounded w-1 h-1;
+	@apply bg-gray-200;
+	@apply dark:bg-gray-600;
+}
+
+*::-webkit-scrollbar-thumb {
+	@apply bg-gray-400 rounded;
+}

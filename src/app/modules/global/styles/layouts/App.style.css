@@ -1,0 +1,5 @@
+/* Parent */
+.app-layout {
+	@apply bg-white text-gray-800;
+	@apply dark:bg-gray-800 dark:text-gray-200;
+}

@@ -1,0 +1,10 @@
+/* Parent */
+.loader {
+	@apply p-0.5 rounded-full max-w-max;
+	@apply bg-gray-200;
+	@apply dark:bg-gray-800;
+}
+
+.loader--overlay {
+	@apply bg-gray-800;
+}

@@ -1,0 +1,233 @@
+/* Parent */
+.input-field {
+	@apply flex flex-col items-center;
+}
+.input-field:disabled {
+	@apply opacity-60;
+}
+
+/* ____________________ Label ____________________ */
+.input-field__label {
+	@apply font-semibold cursor-pointer mb-1;
+	@apply text-gray-500;
+	@apply dark:text-gray-400;
+}
+.input-field:focus-within .input-field__label {
+	@apply text-gray-800;
+	@apply dark:text-gray-200;
+}
+.input-field:disabled .input-field__label {
+	@apply cursor-auto;
+}
+/* Label Primary */
+.input-field--primary:focus-within .input-field__label {
+	@apply text-primary-800;
+	@apply dark:text-primary-400;
+}
+/* Label Secundary */
+.input-field--secondary:focus-within .input-field__label {
+	@apply text-secondary-800;
+	@apply dark:text-secondary-400;
+}
+/* Label Accent */
+.input-field--accent:focus-within .input-field__label {
+	@apply text-accent-800;
+	@apply dark:text-accent-400;
+}
+/* Label Info */
+.input-field--info:focus-within .input-field__label {
+	@apply text-info-800;
+	@apply dark:text-info-400;
+}
+/* Label Success */
+.input-field--success:focus-within .input-field__label {
+	@apply text-success-800;
+	@apply dark:text-success-400;
+}
+/* Label Warning */
+.input-field--warning:focus-within .input-field__label {
+	@apply text-warning-800;
+	@apply dark:text-warning-400;
+}
+/* Label Danger */
+.input-field--danger:focus-within .input-field__label {
+	@apply text-danger-800;
+	@apply dark:text-danger-400;
+}
+
+/* ____________________ Input container ____________________ */
+.input-field__content {
+	@apply flex flex-row w-full border-2 rounded-md;
+	@apply bg-gray-100 text-gray-600 border-gray-500;
+	@apply dark:bg-gray-700 dark:text-gray-300 dark:border-gray-600;
+}
+.input-field:focus-within .input-field__content {
+	@apply text-gray-800 border-gray-800;
+	@apply dark:bg-gray-600 dark:text-gray-200 dark:border-gray-500;
+}
+/* Input container Primary */
+.input-field--primary:focus-within .input-field__content {
+	@apply border-primary-800;
+	@apply dark:border-primary-600;
+}
+/* Input container Secondary */
+.input-field--secondary:focus-within .input-field__content {
+	@apply border-secondary-800;
+	@apply dark:border-secondary-600;
+}
+/* Input container Accent */
+.input-field--accent:focus-within .input-field__content {
+	@apply border-accent-800;
+	@apply dark:border-accent-600;
+}
+/* Input container Info */
+.input-field--info:focus-within .input-field__content {
+	@apply border-info-800;
+	@apply dark:border-info-600;
+}
+/* Input container Success */
+.input-field--success:focus-within .input-field__content {
+	@apply border-success-800;
+	@apply dark:border-success-600;
+}
+/* Input container Warning */
+.input-field--warning:focus-within .input-field__content {
+	@apply border-warning-800;
+	@apply dark:border-warning-600;
+}
+/* Input container Danger */
+.input-field--danger:focus-within .input-field__content {
+	@apply border-danger-800;
+	@apply dark:border-danger-600;
+}
+
+/* ____________________ Icon Before & after ____________________ */
+.input-field__content-bi,
+.input-field__content-ai {
+	@apply my-1 mx-2 text-gray-600;
+	@apply text-gray-500;
+	@apply dark:text-gray-400;
+}
+.input-field:focus-within .input-field__content-bi,
+.input-field:focus-within .input-field__content-ai {
+	@apply text-gray-800;
+	@apply dark:text-gray-200;
+}
+
+/* ____________________ Input content ____________________ */
+.input-field__content input,
+.input-field__content select {
+	@apply bg-transparent w-full p-1 font-medium;
+}
+.input-field__content select option {
+	@apply dark:bg-gray-800 dark:text-gray-200;
+}
+.input-field__content-pass {
+	@apply cursor-pointer my-1 mr-2;
+	@apply text-gray-500;
+	@apply dark:text-gray-400;
+}
+.input-field:focus-within .input-field__content-pass {
+	@apply text-gray-800;
+	@apply dark:text-gray-200;
+}
+.input-field:disabled .input-field__content-pass {
+	@apply cursor-auto;
+}
+
+/* ____________________ Icons ____________________ */
+/* Icons Primary */
+.input-field--primary:focus-within .input-field__content-bi,
+.input-field--primary:focus-within .input-field__content-ai,
+.input-field--primary:focus-within .input-field__content-pass {
+	@apply text-primary-800;
+	@apply dark:text-primary-400;
+}
+/* Icons Secondary */
+.input-field--secondary:focus-within .input-field__content-bi,
+.input-field--secondary:focus-within .input-field__content-ai,
+.input-field--secondary:focus-within .input-field__content-pass {
+	@apply text-secondary-800;
+	@apply dark:text-secondary-400;
+}
+/* Icons Accent */
+.input-field--accent:focus-within .input-field__content-bi,
+.input-field--accent:focus-within .input-field__content-ai,
+.input-field--accent:focus-within .input-field__content-pass {
+	@apply text-accent-800;
+	@apply dark:text-accent-400;
+}
+/* Icons Info */
+.input-field--info:focus-within .input-field__content-bi,
+.input-field--info:focus-within .input-field__content-ai,
+.input-field--info:focus-within .input-field__content-pass {
+	@apply text-info-800;
+	@apply dark:text-info-400;
+}
+/* Icons Success */
+.input-field--success:focus-within .input-field__content-bi,
+.input-field--success:focus-within .input-field__content-ai,
+.input-field--success:focus-within .input-field__content-pass {
+	@apply text-success-800;
+	@apply dark:text-success-400;
+}
+/* Icons Warning */
+.input-field--warning:focus-within .input-field__content-bi,
+.input-field--warning:focus-within .input-field__content-ai,
+.input-field--warning:focus-within .input-field__content-pass {
+	@apply text-warning-800;
+	@apply dark:text-warning-400;
+}
+/* Icons Danger */
+.input-field--danger:focus-within .input-field__content-bi,
+.input-field--danger:focus-within .input-field__content-ai,
+.input-field--danger:focus-within .input-field__content-pass {
+	@apply text-danger-800;
+	@apply dark:text-danger-400;
+}
+
+/* ____________________ Hint ____________________ */
+.input-field__hint {
+	@apply mt-1 text-sm;
+	@apply text-gray-800;
+	@apply dark:text-gray-200;
+}
+/* Hint Primary */
+.input-field--primary .input-field__hint {
+	@apply text-primary-800;
+	@apply dark:text-primary-400;
+}
+/* Hint Secondary */
+.input-field--secondary .input-field__hint {
+	@apply text-secondary-800;
+	@apply dark:text-secondary-400;
+}
+/* Hint Accent */
+.input-field--accent .input-field__hint {
+	@apply text-accent-800;
+	@apply dark:text-accent-400;
+}
+/* Hint Info */
+.input-field--info .input-field__hint {
+	@apply text-info-800;
+	@apply dark:text-info-400;
+}
+/* Hint Success */
+.input-field--success .input-field__hint {
+	@apply text-success-800;
+	@apply dark:text-success-400;
+}
+/* Hint Warning */
+.input-field--warning .input-field__hint {
+	@apply text-warning-800;
+	@apply dark:text-warning-400;
+}
+/* Hint Danger */
+.input-field--danger .input-field__hint {
+	@apply text-danger-800;
+	@apply dark:text-danger-400;
+}
+
+/* ____________________ Error ____________________ */
+.input-field__error {
+}
