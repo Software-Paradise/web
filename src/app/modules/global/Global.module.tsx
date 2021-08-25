@@ -7,6 +7,9 @@ import { PathRoutes } from 'library/components';
 /* Import views */
 import { HomeView } from './views';
 
+/* Import module paths */
+import { AUTHENTICATION_PATH } from 'app/modules/authentication/Authentication.module';
+
 /* Import modules */
 const AuthenticationModule = React.lazy(
 	() => import('app/modules/authentication/Authentication.module')
@@ -30,7 +33,7 @@ export const ROUTES: IRoute[] = [
 	},
 	{
 		name: 'AuthenticationModule',
-		path: '/auth',
+		path: AUTHENTICATION_PATH,
 		component: AuthenticationModule,
 	},
 ];

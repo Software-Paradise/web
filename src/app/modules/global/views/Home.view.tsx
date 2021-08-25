@@ -4,6 +4,7 @@ import { Button, Drop, InputField, Loader } from 'library/components';
 import { FiAirplay, FiAlignCenter } from 'react-icons/fi';
 import { ScrollLayout } from 'library/layouts';
 import { useActive } from 'library/hooks';
+import { Link } from 'react-router-dom';
 
 const HomeView: React.FunctionComponent = () => {
 	const [isDropActive, , , toggleDropActive] = useActive(false);
@@ -222,6 +223,10 @@ const HomeView: React.FunctionComponent = () => {
 			</div>
 
 			<Loader isLoading size={Size.XL} role={Role.DANGER} />
+
+			<Button>
+				<Link to="/auth/sign-in">To SignIn</Link>
+			</Button>
 		</ScrollLayout>
 	);
 };

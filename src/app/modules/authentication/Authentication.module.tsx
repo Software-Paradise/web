@@ -1,22 +1,26 @@
 import React from 'react';
 import { IRoute } from 'library/models';
 import { PathRoutes } from 'library/components';
+import { Switch } from 'react-router-dom';
 
 /* Import views */
-/* import { _View } from './views'; */
+import { SignInView, SignUpView } from './views';
+
+/* Path module */
+export const AUTHENTICATION_PATH = '/auth';
 
 /* Load routes */
 export const ROUTES: IRoute[] = [
 	{
 		name: 'SignIn',
 		path: '/sign-in',
-		component: null,
+		component: SignInView,
 		exact: true,
 	},
 	{
 		name: 'SignUp',
 		path: '/sign-up',
-		component: null,
+		component: SignUpView,
 		exact: true,
 	},
 ];
@@ -26,7 +30,11 @@ export const ROUTES: IRoute[] = [
  * @returns Module to perform authentication
  */
 const AuthenticationModule: React.FunctionComponent = () => {
-	return <PathRoutes routes={ROUTES} />;
+	return (
+		<Switch>
+			<PathRoutes routes={ROUTES} path={AUTHENTICATION_PATH} />
+		</Switch>
+	);
 };
 
 export default React.memo(AuthenticationModule);
