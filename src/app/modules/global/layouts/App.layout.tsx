@@ -21,7 +21,8 @@ const AppLayout: React.FunctionComponent<Props> = ({ children }) => {
 				isDrawer={isDrawerOpen}
 				onClose={closeDrawer}
 				drawer={<Sidebar />}>
-				<Appbar toggleDrawer={toggleDrawer} />
+				{/* Manage the app bar by authentication credentials */}
+				{false && <Appbar toggleDrawer={toggleDrawer} />}
 
 				<BrowserRouter>
 					<Suspense fallback={<FallBack />}>

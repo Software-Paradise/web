@@ -21,7 +21,7 @@ type Props = {
 	className?: string;
 	disabled?: boolean;
 	label?: string;
-	type?: string;
+	type?: 'text' | 'password' | 'select' | 'email' | 'hidden' | 'number';
 	options?: IOption[];
 	id?: string;
 	beforeIcon?: any;
