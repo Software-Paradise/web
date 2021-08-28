@@ -1,10 +1,10 @@
 import React from 'react';
-import { IRoute } from 'library/models';
 import { Route, Redirect } from 'react-router-dom';
+import { RouteType } from 'library/models';
 
 /* Prop definition */
 type Props = {
-	routes: IRoute[];
+	routes: RouteType[];
 	redirect?: string;
 	path?: string;
 };

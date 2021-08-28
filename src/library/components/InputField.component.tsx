@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiEye, FiEyeOff } from 'react-icons/fi';
-import { IOption, Role } from 'library/models';
+import { FieldValues, UseFormRegister } from 'react-hook-form';
+import { OptionType, Role } from 'library/models';
 import { classNames, randomKey } from 'library/utilities';
 import { useActive } from 'library/hooks';
 
@@ -22,13 +23,14 @@ type Props = {
 	disabled?: boolean;
 	label?: string;
 	type?: 'text' | 'password' | 'select' | 'email' | 'hidden' | 'number';
-	options?: IOption[];
+	options?: OptionType[];
 	id?: string;
 	beforeIcon?: any;
 	afterIcon?: any;
 	hint?: string;
 	errorMessage?: string;
 	role?: Role;
+	register?: UseFormRegister<FieldValues>;
 };
 
 /**
@@ -59,6 +61,7 @@ const InputFieldComponent: React.FunctionComponent<Props & Record<string, any>> 
 	hint,
 	errorMessage,
 	role = Role.NONE,
+	register,
 	...rest
 }) => {
 	const [isVisible, showPassword, hidePassword] = useActive();
@@ -81,7 +84,7 @@ const InputFieldComponent: React.FunctionComponent<Props & Record<string, any>> 
 				{beforeIcon && <i className="input-field__content-bi">{beforeIcon}</i>}
 
 				{type === 'select' ? (
-					<select id={id} autoComplete="off" {...rest}>
+					<select id={id} autoComplete="off" {...rest} {...register}>
 						{options.map(({ label, value, disabled }, index) => (
 							<option
 								key={`${id}_${index}`}
@@ -98,6 +101,7 @@ const InputFieldComponent: React.FunctionComponent<Props & Record<string, any>> 
 						id={id}
 						autoComplete="off"
 						{...rest}
+						{...register}
 					/>
 				)}
 

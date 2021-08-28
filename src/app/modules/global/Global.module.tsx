@@ -1,8 +1,8 @@
 import './styles/index.css';
 import React from 'react';
 import { AppLayout } from './layouts';
-import { IRoute } from 'library/models';
 import { PathRoutes } from 'library/components';
+import { RouteType } from 'library/models';
 
 /* Import views */
 import { HomeView } from './views';
@@ -16,7 +16,7 @@ const AuthenticationModule = React.lazy(
 );
 
 /* Load routes */
-export const ROUTES: IRoute[] = [
+const ROUTES: RouteType[] = [
 	{
 		name: 'index',
 		path: '/',

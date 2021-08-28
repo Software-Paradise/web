@@ -5,11 +5,10 @@ import { Role } from './Role.model';
 import { Variant } from './Variant.model';
 import { Direction } from './Direction.model';
 import { Alignment } from './Alignment.model';
-
-/* Import interfaces */
-import { IRoute } from './IRoute.model';
-import { IOption } from './IOption.model';
+import { RouteType } from './RouteType.model';
+import { OptionType } from './OptionType.model';
+import { InputType } from './InputType.model';
 
 export { Scroll, Position, BreakPoint, Role, Variant, Direction, Alignment, BreakPoint as Size };
 
-export type { IRoute, IOption };
+export type { RouteType, OptionType, InputType };

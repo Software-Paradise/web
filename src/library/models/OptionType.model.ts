@@ -1,5 +1,5 @@
-export interface IOption {
+export type OptionType = {
 	label: string;
 	value: string;
 	disabled?: boolean;
-}
+};

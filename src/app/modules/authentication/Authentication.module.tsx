@@ -1,6 +1,7 @@
+import './styles/index.css';
 import React from 'react';
-import { IRoute } from 'library/models';
 import { PathRoutes } from 'library/components';
+import { RouteType } from 'library/models';
 import { Switch } from 'react-router-dom';
 
 /* Import views */
@@ -10,7 +11,7 @@ import { SignInView, SignUpView } from './views';
 export const AUTHENTICATION_PATH = '/auth';
 
 /* Load routes */
-export const ROUTES: IRoute[] = [
+const ROUTES: RouteType[] = [
 	{
 		name: 'SignIn',
 		path: '/sign-in',

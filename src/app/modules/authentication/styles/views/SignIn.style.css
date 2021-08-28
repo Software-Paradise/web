@@ -1,0 +1,56 @@
+/* Parent */
+.sign-in-view {
+	@apply p-2;
+}
+
+/* Select language */
+.sign-in-view--lang {
+	@apply m-2 ml-auto;
+}
+
+/* Sign In form content */
+.sign-in-view--content {
+	@apply m-auto w-full max-w-xs p-2;
+}
+
+/* Content logo */
+.sign-in-view--content--logo {
+	@apply bg-primary-800 p-2 rounded-xl;
+}
+.sign-in-view--content--logo img {
+	@apply w-56 h-24 mx-auto object-contain;
+}
+
+/* Content title */
+.sign-in-view--content--title {
+	@apply text-center my-2 font-semibold text-xl;
+	@apply text-primary-800;
+	@apply dark:text-primary-600;
+}
+
+/* Content form */
+.sign-in-view--content--form {
+	@apply my-2;
+}
+.sign-in-view--content--form fieldset {
+	@apply my-2;
+}
+.sign-in-view--content--form hr {
+	@apply my-4;
+	@apply border-primary-600;
+	@apply dark:border-primary-400;
+}
+.sign-in-view--content--form--actions {
+	@apply my-2 grid grid-cols-2 gap-2;
+}
+.sign-in-view--content--form--actions--sign-up {
+	@apply col-start-1 row-start-1;
+}
+
+/* Powered by */
+.sign-in-view--powered {
+	@apply bg-primary-800 p-2 rounded-xl;
+}
+.sign-in-view--powered img {
+	@apply w-36 h-16 mx-auto object-contain;
+}
